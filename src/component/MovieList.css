@@ -1,26 +1,21 @@
 /* MovieList.css */
 
-.movie-list-container {
+.movie-list {
+  padding: 0;
+  list-style-type: none;
+
   display: flex;
   justify-content: center;
-}
-
-.movie-list {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
+  align-items: center;
   flex-wrap: wrap;
-  margin: 10px;
-  padding: 20px;
-  margin-left: 150px;
+  gap: 15px;
 }
 
 .movie-item {
-  margin: 10px;
   max-width: 300px;
   background-color: #726969;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for card effect */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 10px;
 }
 

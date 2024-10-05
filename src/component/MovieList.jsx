@@ -10,14 +10,16 @@ function MovieList({ movies }) {
       <ul className="movie-list">
         {movies.map((movie) => (
           <li key={movie.id} className="movie-item">
-            <Link to={`/movie/?movie=${movie.id}`}>Details</Link>
+            <Link to={`/movie/?movie=${movie.id}`}>
+              <img
+                src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                alt={movie.title}
+              />
+            </Link>
             <h2>{movie.title}</h2>
             <h3>Release Date -: {movie.release_date}</h3>
-            <p>{movie.overview}</p>
-            <img
-              src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-              alt={movie.title}
-            />
+            <h3>IMDb Ratings -: {movie.vote_average}</h3>
+            {/* <p>{movie.overview}</p> */}
           </li>
         ))}
       </ul>

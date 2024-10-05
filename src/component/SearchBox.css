@@ -2,8 +2,9 @@
 
 .search-container {
   display: flex;
-  justify-content: center; /* Horizontally center the search form */
+  justify-content: center;
   margin-bottom: 20px;
+  align-items: center;
 }
 
 .search-form {

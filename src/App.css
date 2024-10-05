@@ -1,3 +1,18 @@
-.master-div {
-  background-color: rgb(216, 248, 189);
+body {
+  background-color: rgb(181, 181, 177);
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 50px;
+  /* margin-bottom: 30px; */
 }
