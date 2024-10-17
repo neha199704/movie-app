@@ -56,11 +56,19 @@ function HomePage() {
       ></SearchBox>
       <MovieList movies={movies}></MovieList>
       <div className="pagination-controls">
-        <button onClick={handlePreviousPage} disabled={currentPage === 1}>
+        <button
+          onClick={handlePreviousPage}
+          disabled={currentPage === 1}
+          className="pageBtn"
+        >
           Previous
         </button>
 
-        <button onClick={handleNextPage} disabled={currentPage === totalPages}>
+        <button
+          onClick={handleNextPage}
+          disabled={currentPage === totalPages}
+          className="pageBtn"
+        >
           Next
         </button>
       </div>

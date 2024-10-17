@@ -38,7 +38,7 @@ function DetailPage() {
       .catch((err) => console.log(err));
   }, []);
   console.log(videos);
-  // console.log("results", results);
+  console.log("results", detail);
   return (
     <div>
       {loading ? (
@@ -54,9 +54,16 @@ function DetailPage() {
               <p> {detail.overview}</p>
               <p>
                 Genres:{" "}
-                {detail.genres.map((genre, i) => (
-                  <span key={i}>{genre.name} </span>
-                ))}
+                {detail.genres && detail.genres.length > 0 ? (
+                  detail.genres.map((genre, i) => (
+                    <span key={i}>
+                      {genre.name}
+                      {i !== detail.genres.length - 1 && ", "}
+                    </span>
+                  ))
+                ) : (
+                  <span>No genres available</span>
+                )}
               </p>
               <p>Budget: {detail.budget}</p>
               <p>origin_country: {detail.origin_country}</p>
