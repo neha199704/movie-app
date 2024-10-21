@@ -25,7 +25,6 @@ function DetailPage() {
       })
       .catch((err) => console.log(err));
   }, [params.productId]);
-  // console.log(detail);
 
   useEffect(() => {
     fetch(
@@ -37,8 +36,7 @@ function DetailPage() {
       })
       .catch((err) => console.log(err));
   }, []);
-  console.log(videos);
-  console.log("results", detail);
+
   return (
     <div>
       {loading ? (

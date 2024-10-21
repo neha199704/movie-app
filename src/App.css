@@ -1,5 +1,5 @@
 body {
-  background-color: #20232a;
+  background-color: #0a2342;
   color: #ffffff;
   font-family: "Arial", sans-serif;
   margin: 0;
@@ -14,14 +14,15 @@ body {
 }
 
 .heading {
-  text-align: center;
   font-size: 50px;
-  color: #ff6347;
-  margin-bottom: 30px;
+  color: #2ca58d;
+  margin: 0;
+  padding: 0;
+  flex: 1;
 }
 
 .pageBtn {
-  background-color: #ff6347;
+  background-color: #f46197;
   color: #ffffff;
   padding: 15px;
   margin: 10px;
@@ -34,6 +35,15 @@ body {
 }
 
 .pageBtn:hover {
-  background-color: #ff4500;
+  background-color: #f43078;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.headerDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1210px;
+  margin: 28px auto;
 }

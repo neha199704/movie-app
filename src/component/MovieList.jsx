@@ -17,9 +17,10 @@ function MovieList({ movies }) {
               />
             </Link>
             <h2>{movie.title}</h2>
-            <h3>Release Date -: {movie.release_date}</h3>
-            <h3>IMDb Ratings -: {movie.vote_average}</h3>
-            {/* <p>{movie.overview}</p> */}
+            <div className="ratingP">
+              <p>Release Date -: {movie.release_date}</p>
+              <p>IMDb Ratings -: {movie.vote_average}</p>
+            </div>
           </li>
         ))}
       </ul>

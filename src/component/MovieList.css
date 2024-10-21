@@ -8,7 +8,7 @@
 
 .movie-item {
   width: 280px;
-  background-color: #292b2f;
+  background-color: #fffdf7;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   overflow: hidden;
@@ -23,27 +23,24 @@
 .movie-item img {
   width: 100%;
   height: auto;
-  border-bottom: 3px solid #ff6347;
+  border-bottom: 3px solid #2ca58d;
 }
 
 .movie-item h2 {
   font-size: 18px;
-  color: #ff6347;
+  color: #2ca58d;
   text-align: center;
-  margin: 15px 0 5px;
-}
-
-.movie-item h3 {
-  font-size: 14px;
-  color: #cfcfcf;
-  text-align: center;
-  margin-bottom: 10px;
+  margin: 10px 0 5px;
 }
 
 .movie-item p {
-  font-size: 13px;
-  color: #bfbfbf;
+  font-size: 14px;
+  color: #84bc9c;
   text-align: center;
-  margin: 10px;
-  padding: 0 10px;
+  margin: 4px;
+}
+
+.ratingP {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }

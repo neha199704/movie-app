@@ -37,23 +37,27 @@ function HomePage() {
   const handleNextPage = () => {
     if (currentPage < totalPages) {
       setCurrentPage((prevPage) => prevPage + 1);
+      window.scrollTo(0, 0);
     }
   };
 
   const handlePreviousPage = () => {
     if (currentPage > 1) {
       setCurrentPage((prevPage) => prevPage - 1);
+      window.scrollTo(0, 0);
     }
   };
 
   return (
     <div className="master-div">
-      <h1 className="heading">Movie App</h1>
-      <SearchBox
-        searchTerm={searchTerm}
-        setSearchTerm={setSearchTerm}
-        handleSearch={handleSearch}
-      ></SearchBox>
+      <div className="headerDiv">
+        <h1 className="heading">Movie App</h1>
+        <SearchBox
+          searchTerm={searchTerm}
+          setSearchTerm={setSearchTerm}
+          handleSearch={handleSearch}
+        ></SearchBox>
+      </div>
       <MovieList movies={movies}></MovieList>
       <div className="pagination-controls">
         <button
